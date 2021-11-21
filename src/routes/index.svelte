@@ -1,2 +1,7 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+    import '../frame.css';
+</script>
+
+<svelte:head>
+    <title>Jarolin Vargas - Front-end Engineer &amp; UI/UX Designer</title>
+</svelte:head>

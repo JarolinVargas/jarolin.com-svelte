@@ -1,0 +1,19 @@
+html, body {
+    height: 100vh;
+    min-width: 320px;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins",sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #282828;
+    background: radial-gradient(circle,#1b1d28 0,#000 100%);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
