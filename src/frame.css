@@ -6,14 +6,46 @@ html, body {
 
 body {
     margin: 0;
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background: #282828;
     background: radial-gradient(circle,#1b1d28 0,#000 100%);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+}
+
+.general-container {
+    position: absolute;
+    width: calc(100% - 60px);
+    height: calc(100% - 60px);
+    top: 30px;
+    left: 30px;
+    z-index: 1;
+    box-sizing: border-box;
+    display: grid;
+}
+
+.content-container {
+    border: 3px solid hsla(0,0%,100%,.03);
+    border-radius: 30px;
+    box-sizing: border-box;
+    background-color: hsla(0,0%,100%,.005);
+    box-shadow: rgb(0 0 0) 0px 0px 30px;
+    background-color: rgba(255, 255, 255, 0.004);
+    display: grid;
+    grid-template-columns: 1fr 58%;
+}
+
+.aboutme-gradient {
+    -webkit-text-fill-color: hsla(0,0%,100%,0);
+    color: #557cff;
+    background: linear-gradient(90deg,#3af4f5 0,#164dfe 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
 }

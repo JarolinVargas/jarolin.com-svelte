@@ -1,3 +1,7 @@
+<svelte:head>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap" rel="stylesheet" />
+</svelte:head>
+
 <script>
     import '../frame.css';
 </script>
@@ -25,11 +29,6 @@
 </div>
 
 <style>
-    a {
-        text-transform: uppercase;
-        color: #FFF;
-    }
-
     .root {
         height: 100vh;
         width: 100vw;
@@ -64,6 +63,7 @@
         position: relative;
         box-sizing: border-box;
         border-image-source: linear-gradient(to right, rgb(58, 244, 245), rgb(22, 77, 254));
+        overflow: hidden;
     }
 
     nav {
@@ -74,7 +74,7 @@
         margin-top: -26px;
         display: flex;
         z-index: 2;
-        font-size: 1.2em;
+        font-size: 1.05em;
         -webkit-user-select: none;
         -ms-user-select: none;
         user-select: none;
@@ -102,6 +102,11 @@
         width: -webkit-fit-content;
         width: -moz-fit-content;
         width: fit-content;
+    }
+
+    a {
+        text-transform: uppercase;
+        color: #FFF;
     }
 
     .navitem-separator {
