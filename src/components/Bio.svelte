@@ -17,10 +17,11 @@
 <style>
     article {
         width: auto;
-        align-self: center;
         grid-column-start: 2;
-        margin: 30px;
-        margin-left: 0px;
+        padding: 30px;
+        box-sizing: border-box;
+        position: relative;
+        z-index: 10;
     }
 
     h1 {

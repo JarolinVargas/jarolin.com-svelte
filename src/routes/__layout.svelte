@@ -10,7 +10,7 @@
     <div class="frame">
         <nav>
             <div class="active-tab-indicator"></div>
-            <ul>
+            <ul class="nav-desktop">
                 <li class="navitem-separator"></li>
                 <li><a href="/">About Me</a></li>
                 <li class="navitem-separator"></li>
@@ -80,7 +80,7 @@
         user-select: none;
     }
 
-    ul {
+    .nav-desktop {
         display: flex;
         width: 100%;
         margin: 0;
@@ -135,5 +135,38 @@
         transition-property: left;
         transition-duration: .3s;
         transition-timing-function: ease-out;
+    }
+
+    @media screen and (max-width: 940px) {
+        .root {
+            position: relative;
+        }
+
+        .frame {
+            padding-top: 0;
+            max-height: none;
+        }
+
+        main {
+            height: fit-content;
+        }
+
+        nav {
+            margin-top: 0;
+        }
+
+        .nav-desktop {
+            position: fixed;
+            border-bottom: solid 1px;
+            border-image-source: linear-gradient(to right, rgb(58, 244, 245), rgb(22, 77, 254));
+            border-image-slice: 1;
+            height: 50px;
+            width: calc(100vw - 30px);
+            background-image: linear-gradient(to right, rgb(58 244 245 / 44%), rgb(22 77 254 / 37%));
+        }
+
+        .nav-desktop li {
+            display: none;
+        }
     }
 </style>

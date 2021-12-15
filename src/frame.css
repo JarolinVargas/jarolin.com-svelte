@@ -49,3 +49,17 @@ a {
     -webkit-background-clip: text;
     background-clip: text;
 }
+
+@media screen and (max-width: 940px) {
+    html, body {
+        overflow: scroll;
+    }
+
+    .general-container {
+        height: auto;
+        position: relative;
+        width: auto;
+        left: auto;
+        margin: 10px;
+    }
+}
