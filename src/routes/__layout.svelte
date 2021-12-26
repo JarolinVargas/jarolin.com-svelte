@@ -163,10 +163,48 @@
             height: 50px;
             width: calc(100vw - 30px);
             background-image: linear-gradient(to right, rgb(58 244 245 / 44%), rgb(22 77 254 / 37%));
+            backdrop-filter: blur(10px);
         }
 
-        .nav-desktop li {
+        .active-tab-indicator {
             display: none;
+        }
+
+        .nav-desktop li:first-child {
+            flex-basis: 100%;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        nav {
+           font-size: 13px; 
+        }
+
+        .navitem-separator {
+            min-width: 10px;
+        }
+
+        li:not(.navitem-separator) {
+            padding: 0 5px;
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        .frame {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        nav {
+            font-size: 12px;
+        }
+
+        .navitem-separator {
+            min-width: 5px;
+        }
+
+        .nav-desktop {
+            width: calc(100vw - 10px);
         }
     }
 </style>

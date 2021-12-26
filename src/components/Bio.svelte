@@ -35,7 +35,6 @@
     h3 {
         margin: 0;
         line-height: 1.2;
-        font-weight: 500;
     }
 
     p {
